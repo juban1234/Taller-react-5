@@ -1,15 +1,12 @@
-import "./App.css";
-import { Product } from "./page/Product";
+import { Header } from "./Header/Header";
+import { Home } from "./page/Home";
 
 
- function App() {
-
+export const App = () => {
   return (
     <>
-      <Product/>
+      <Header/>
+      <Home/>
     </>
   );
 }
-
- export default App;
-

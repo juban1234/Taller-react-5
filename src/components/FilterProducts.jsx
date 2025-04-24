@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import { Product } from '../page/Product'
+import { Product } from '../Api/ProductosContext'
 // import { Products } from '../assets/products';
 
 
