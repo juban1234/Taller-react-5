@@ -1,13 +1,14 @@
 import React,{ useState } from 'react'
-import { Product } from './Product'
-import { products } from '../assets/products.js'
+import { Product } from '../page/Product'
+// import { Products } from '../assets/products';
+
 
 export const FilterProducts = () => {
   const [Name, SetName] = useState(""); 
   
-  const filteredProducts = products.filter((product) =>
-    product.nameProduct.toLowerCase().includes(Name.toLowerCase())
-  );
+  // const filteredProducts = products.filter((product) =>
+  //   product.nameProduct.toLowerCase().includes(Name.toLowerCase())
+  // );
 
   return (
     <div className="flex flex-col items-center p-8 bg-gray-50 min-h-screen">
@@ -66,20 +67,21 @@ export const FilterProducts = () => {
           </button>
         </div>
       </div>
-
+{/* 
         <ul>
           {filteredProducts.map((product) => (
             <Product key={product.sku} {...product} />
           ))}
         </ul>
+*/}
 
-      <div>
+{/* <div>
         {
-          products.map((product) => (
-            <Product key={product.sku} {...product} />
+          Products.map((product) => (
+            <Product key={product.id} {...product} />
           ))
         }
-      </div>
+      </div>  */}
     </div>
   )
 }

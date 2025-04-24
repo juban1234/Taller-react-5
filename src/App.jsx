@@ -1,13 +1,12 @@
 import "./App.css";
-import { FilterProducts } from "./components/FilterProducts";
-import { Product } from "./components/Product";
+import { Product } from "./page/Product";
+
 
  function App() {
-  
+
   return (
     <>
       <Product/>
-      <FilterProducts/>
     </>
   );
 }
