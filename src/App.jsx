@@ -5,8 +5,10 @@ import { Home } from "./page/Home";
 export const App = () => {
   return (
     <>
-      <Header/>
+    <div className="min-h-screen w-screen flex flex-col items-center bg-cyan-300 ">
+      <Header  />
       <Home/>
+    </div>
     </>
   );
 }

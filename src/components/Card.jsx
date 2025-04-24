@@ -2,7 +2,7 @@ export const Card = ({ producto }) => {
     const { id, title, category, price, description, image, rating } = producto;
   
     return (
-      <div className="mt-2 max-w-sm mx-auto border border-solid rounded-lg p-4 bg-gray-50 shadow-lg text-blue-700">
+      <div className="flex flex-row flex-wrap mt-2 max-w-sm mx-auto border border-solid rounded-lg p-4 bg-gray-50 shadow-lg text-blue-700">
         <h2 className="text-xl font-semibold mb-2 text-center">{title}</h2>
         <p className="text-sm font-medium mb-1">ID: <span className="font-normal">{id}</span></p>
         <p className="text-sm font-medium mb-1">Categoría: <span className="font-normal">{category}</span></p>

@@ -9,6 +9,7 @@ export const Home = () => {
 
   return (
     <div>
+        <p> productos </p>
       {productos.map(producto => (
         <Card key={producto.id} producto={producto} />
       ))};
