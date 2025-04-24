@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ProductosContext } from '../Api/ProductosContext';
+import { Card } from '../components/Card';
 
 export const Home = () => {
   const { productos, loading } = useContext(ProductosContext);
@@ -9,8 +10,8 @@ export const Home = () => {
   return (
     <div>
       {productos.map(producto => (
-        <p key={producto.id}>{producto.title}</p>
-      ))}
+        <Card key={producto.id} producto={producto} />
+      ))};
     </div>
   );
 };
